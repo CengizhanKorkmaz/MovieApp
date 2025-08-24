@@ -1,0 +1,19 @@
+namespace MovieApp.Application.Features.CQRSDesignPatterns.Results.MovieResults;
+
+public class GetMovieQueryResult
+{
+    public string Name { get; set; }
+    public string Title { get; set; }
+    public string CoverImageUrl { get; set; }
+    public decimal Rating { get; set; }
+    public string? Description { get; set; }
+    public int Duration { get; set; }
+    public DateTime ReleaseDate { get; set; }
+    public int Year { get; set; }
+    public bool Status { get; set; }
+}
+
+public class GetMovieByIdQueryResult : GetMovieQueryResult
+{
+    public int Id { get; set; }
+}
