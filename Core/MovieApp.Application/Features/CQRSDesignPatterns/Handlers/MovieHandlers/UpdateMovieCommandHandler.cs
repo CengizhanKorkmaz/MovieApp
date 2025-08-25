@@ -5,7 +5,7 @@ namespace MovieApp.Application.Features.CQRSDesignPatterns.Handlers.MovieHandler
 
 public class UpdateMovieCommandHandler(ApplicationContext context)
 {
-    public async void Handle(UpdateMovieCommand command)
+    public async Task Handle(UpdateMovieCommand command)
     {
         var movie = await context.Movies.FindAsync(command.Id);
         if (movie != null)

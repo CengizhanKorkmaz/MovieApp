@@ -1,12 +1,13 @@
+using MovieApp.Application.Features.CQRSDesignPatterns.Commands.CategoryCommands;
 using MovieApp.Persistence.Data.Context;
 
 namespace MovieApp.Application.Features.CQRSDesignPatterns.Handlers.CategoryHandlers;
 
 public class DeleteCategoryCommandHandler(ApplicationContext context)
 {
-    public async void Handle(int id)
+    public async Task Handle(DeleteCategoryCommand command)
     {
-        var category = await context.Categories.FindAsync(id);
+        var category = await context.Categories.FindAsync(command.Id);
         if (category != null)
         {
             context.Categories.Remove(category);

@@ -5,7 +5,7 @@ namespace MovieApp.Application.Features.CQRSDesignPatterns.Handlers.CategoryHand
 
 public class UpdateCategoryCommandHandler(ApplicationContext context)
 {
-    public async void Handle(UpdateCategoryCommand command)
+    public async Task Handle(UpdateCategoryCommand command)
     {
         var category = await context.Categories.FindAsync(command.Id);
         if (category != null)

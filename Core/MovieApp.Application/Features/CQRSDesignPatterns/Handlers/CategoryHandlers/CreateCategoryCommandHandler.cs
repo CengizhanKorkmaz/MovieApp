@@ -6,7 +6,7 @@ namespace MovieApp.Application.Features.CQRSDesignPatterns.Handlers.CategoryHand
 
 public class CreateCategoryCommandHandler(ApplicationContext context)
 {
-    public async void Handle(CreateCategoryCommand command)
+    public async Task Handle(CreateCategoryCommand command)
     {
         context.Categories.Add(new Category
         {

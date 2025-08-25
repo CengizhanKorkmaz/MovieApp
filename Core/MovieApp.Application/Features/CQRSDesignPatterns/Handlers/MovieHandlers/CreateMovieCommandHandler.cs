@@ -5,7 +5,7 @@ namespace MovieApp.Application.Features.CQRSDesignPatterns.Handlers.MovieHandler
 
 public class CreateMovieCommandHandler(ApplicationContext context)
 {
-    public async void Handle(CreateMovieCommand command)
+    public async Task Handle(CreateMovieCommand command)
     {
         context.Movies.Add(new Domain.Entities.Movie
         {
