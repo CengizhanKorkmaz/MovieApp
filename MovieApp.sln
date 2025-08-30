@@ -18,6 +18,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieApp.API", "Presentaion
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieApp.Application", "Core\MovieApp.Application\MovieApp.Application.csproj", "{3F1144D4-7A19-48AC-ADD9-89D96CA2DC24}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieApp.WebUI", "Frontend\MovieApp.WebUI\MovieApp.WebUI.csproj", "{F4000756-E2AF-4EFB-BD8C-E5E605303260}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,6 +30,7 @@ Global
 		{AC322C68-335A-4725-8A87-5DA6B4E5DEF0} = {D481E4E0-6802-413D-A984-559E8106F549}
 		{BDAC9E68-C16B-484A-93F8-7C88ED357582} = {80BCA21B-A1A2-471E-92F0-B30608450970}
 		{3F1144D4-7A19-48AC-ADD9-89D96CA2DC24} = {EEE86043-8365-444B-B1E0-8B01EB7F87D2}
+		{F4000756-E2AF-4EFB-BD8C-E5E605303260} = {CAFA59EA-DCAB-4845-9472-004ECFF493AF}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{0C4B40A0-E6C6-4A2A-A234-DD6D4F038732}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -46,5 +49,9 @@ Global
 		{3F1144D4-7A19-48AC-ADD9-89D96CA2DC24}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F1144D4-7A19-48AC-ADD9-89D96CA2DC24}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F1144D4-7A19-48AC-ADD9-89D96CA2DC24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4000756-E2AF-4EFB-BD8C-E5E605303260}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4000756-E2AF-4EFB-BD8C-E5E605303260}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4000756-E2AF-4EFB-BD8C-E5E605303260}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4000756-E2AF-4EFB-BD8C-E5E605303260}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
