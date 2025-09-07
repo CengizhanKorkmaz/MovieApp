@@ -1,10 +1,12 @@
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using MovieApp.Domain.Entities;
+using MovieApp.Persistence.Data.Identity;
 using MovieApp.Persistence.Data.Mappings;
 
 namespace MovieApp.Persistence.Data.Context;
 
-public class ApplicationContext:DbContext
+public class ApplicationContext:IdentityDbContext<AppUser>
 {
     public ApplicationContext()
     {

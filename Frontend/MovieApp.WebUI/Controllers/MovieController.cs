@@ -23,5 +23,10 @@ public class MovieController(IHttpClientFactory httpClientFactory):Controller
 
         return View();
     }
+
+    public async Task<IActionResult> MovieDetail(int id)
+    {
+        return View();
+    }
     
 }
