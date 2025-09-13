@@ -11,7 +11,7 @@ public class CreateUserRegisterCommandHandler(ApplicationContext context,UserMan
     {
         var user = new AppUser
         {
-            UserName = command.Email,
+            UserName = command.Username,
             Email = command.Email,
             Name = command.Name,
             Surname = command.Surname
